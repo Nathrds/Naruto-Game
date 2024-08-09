@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NARUTO - Super Trunfo</title>
+  </head>
+  <body>
+    <div class="container">
+        <img src="./img/img-logo-naruto.png" alt="Logo Naruto">
+      <h1 class="page-title">Super Trunfo</h1>
+      <form id="form">
+          <h2>Escolha o seu atributo</h2>
+          <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <div class="wrapper">
+          <div>
+            <div id="carta-jogador">
+                <img src="./img/card-super-trunfo-transparent-ajustado.png" alt="Carta 1">
+              <h3></h3>
+            </div>
+          </div>
+          <div>
+            <div id="carta-maquina" class="carta">
+                <img src="./img/card-super-trunfo-transparent-ajustado.png" alt="Carta 2">
+            </div>
+          </div>
+        </div>
+        <button
+          class="button-jogar"
+          type="button"
+          id="btnJogar"
+          onclick="jogar()"
+          disabled="false"
+        >
+          Jogar
+        </button>
+        <div id="resultado"></div>
+        <div id="resultadoFinal"></div>
+      </form>
+    </div>
+  </body>
+</html>
