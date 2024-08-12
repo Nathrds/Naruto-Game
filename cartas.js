@@ -49,7 +49,7 @@ var baralhoMaquina = [
     },
     {
       nome: "Sasuke",
-      imagem: "https://www.icegif.com/wp-content/uploads/sasuke-icegif-1.gif",
+      imagem: "https://i.pinimg.com/originals/06/7b/90/067b90993286eaced297d2d31510427c.gif",
       atributos: {
         combate: 7,
         resistencia: 3
@@ -135,18 +135,18 @@ var baralhoMaquina = [
       // A condição para comparar os atributo
       if (valorCartaJogador > valorCartaMaquina) {
         elementoResultado.innerHTML =
-          "<p class='resultado-final'>Parabéns. Você Venceu!";
+          "<p class='resultado-final'>Parabéns! Você Venceu!!";
         var indice = localizarCarta(baralhoMaquina, cartaMaquina);
         baralhoMaquina.splice(indice, 1);
         baralhoJogador.push(cartaMaquina);
       } else if (valorCartaJogador < valorCartaMaquina) {
         elementoResultado.innerHTML =
-          "<p class='resultado-final'>Que pena... Você Perdeu!</p>";
+          "<p class='resultado-final'>Que pena... Você Perdeu.</p>";
         indice = localizarCarta(baralhoJogador, cartaJogador);
         baralhoJogador.splice(indice, 1);
         baralhoMaquina.push(cartaJogador);
       } else {
-        elementoResultado.innerHTML = "<p class='resultado-final'>Empate!</p>";
+        elementoResultado.innerHTML = "<p class='resultado-final'>Empate!!</p>";
       }
   
       document.getElementById("btnJogar").disabled = true; // desabilita botão jogar
@@ -192,7 +192,7 @@ var baralhoMaquina = [
     div.style.backgroundImage = `url(${carta.imagem})`;
   
     var moldura =
-      '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
+      '<img src="./img/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">';
     var nome = `<p class="carta-subtitle">${carta.nome}</p>`;
   
     return moldura + nome;
@@ -201,7 +201,7 @@ var baralhoMaquina = [
   function limparCartaMaquina() {
     divCartaMaquina.style.backgroundImage = `url("")`;
     divCartaMaquina.innerHTML = `<img
-                              src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                              src="./img/card-super-trunfo-transparent-ajustado.png"
                               style=" width: inherit; height: inherit; position: absolute;">`;
   }
   
