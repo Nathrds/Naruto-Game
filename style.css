@@ -16,6 +16,20 @@ body {
     padding-bottom: 20vh;
 }
 
+body::-webkit-scrollbar-thumb {
+    background-color: #A01A16;
+    border-radius: 20px;
+    border: 1px solid #A01A16;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f0b2147c;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
 .container {
     text-align: center;
     padding: 30px 50px 60px 50px;
@@ -111,6 +125,7 @@ h2 {
 }
 
 .carta-status {
+    text-align: left;
     height: 160px;
     margin: 2rem;
     color: white;
@@ -162,9 +177,11 @@ form {
 }
 
 .carta-subtitle {
+    color: #59180B;
     z-index: 2;
     position: absolute;
-    top: 16px;
+    top: 34px;
+    /* top: 16px; */
     left: 37px;
     font-weight: 800;
     text-transform: uppercase;
